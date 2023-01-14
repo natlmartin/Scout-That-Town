@@ -27,7 +27,93 @@ h1 {
   font-size: 3rem;
 }
 
-h2 {
+h5 {
+  font-family: Lobster, Arial, sans-serif;
+  color: #00aaa0;
+  font-size: 2rem;
+}
+
+img.logo {
+  height: 3rem;
+  margin-left: 1rem;
+  width: auto;
+}
+
+h1.logo {
+  font-size: 1rem;
+  font-family: Lobster, Arial, sans-serif;
+  margin: 0;
+}
+
+div.logo {
+  height: 30px;
+  margin: 20px 0;
+  margin-left: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+li {
+  list-style: none;
+}
+
+.navbar {
+  height: 80px;
+  width: 100%;
+  color: #fbfbfc;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 0.5rem;
+}
+
+.navmenu {
+  align-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav > ul {
+  padding: 0;
+}
+
+nav a {
+  margin: 15px;
+  color: #00aaa0;
+  font-weight: 600;
+}
+
+.burger {
+  margin: auto;
+  margin-left: 10px;
+  display: none;
+  height: 30px;
+  width: 40px;
+  padding: 10px 5px;
+}
+
+@media only screen and (max-width: 480px) {
+  nav li a {
+    display: none;
+  }
+
+  img.burger {
+    display: block;
+    float: right;
+    margin-right: 1rem;
+  }
+
+  h1 {
+    display: none;
+  }
+
+  nav button {
+    display: none;
+  }
+}
+
+body {
+  margin: 0.5rem;
 }
 
 .cityButton {
