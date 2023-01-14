@@ -16,3 +16,22 @@ https://palettes.shecodes.io/palettes/388
 .fourth-color { 
 	background: #d55b3e; 
 } */
+
+* {
+  font-family: Raleway, Arial, sans-serif;
+}
+
+h1 {
+  font-family: Lobster, Arial, sans-serif;
+  color: #00aaa0;
+  font-size: 3rem;
+}
+
+h2 {
+}
+
+.cityButton {
+  background-color: #d55b3e;
+  color: #fcf4d9;
+  border: none;
+}
