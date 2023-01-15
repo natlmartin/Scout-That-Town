@@ -116,8 +116,19 @@ body {
   margin: 0.5rem;
 }
 
+.hero {
+  background-image: url("header_map.jpeg");
+  background-size: cover;
+  width: 100%;
+  height: 20rem;
+}
+
 .cityButton {
   background-color: #d55b3e;
   color: #fcf4d9;
   border: none;
+}
+
+.cardSection {
+  display: flex;
 }
