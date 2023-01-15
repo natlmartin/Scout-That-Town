@@ -27,10 +27,21 @@ h1 {
   font-size: 3rem;
 }
 
-h5 {
+h2 {
+  font-family: Lobster, Arial, sans-serif;
+  color: #8ed2c9;
+  font-size: 2rem;
+}
+
+.card-title {
   font-family: Lobster, Arial, sans-serif;
   color: #00aaa0;
   font-size: 2rem;
+}
+
+h6 {
+  font-size: 1.5rem;
+  font-weight: 800;
 }
 
 img.logo {
@@ -81,6 +92,11 @@ nav a {
   margin: 15px;
   color: #00aaa0;
   font-weight: 600;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #d55b3e;
 }
 
 .burger {
@@ -112,7 +128,7 @@ nav a {
   }
 }
 
-body {
+main {
   margin: 0.5rem;
 }
 
@@ -121,14 +137,55 @@ body {
   background-size: cover;
   width: 100%;
   height: 20rem;
+  margin: 3rem 0 2rem;
 }
 
-.cityButton {
+div.heroContent {
+  padding: 2rem;
+  width: 50%;
+}
+
+h2.heroContent {
+  color: #d55b3e;
+}
+
+@media only screen and (max-width: 480px) {
+  div.heroContent {
+    width: 80%;
+  }
+}
+
+.btn {
   background-color: #d55b3e;
   color: #fcf4d9;
   border: none;
 }
 
+.btn:hover {
+  background-color: #8ed2c9;
+}
+
 .cardSection {
   display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  margin: 2rem 0 2rem;
+}
+
+#CitySelection {
+  margin: 2rem;
+}
+
+.card {
+  margin: 1rem;
+}
+
+.surpriseMe {
+  margin: 2rem;
+}
+
+footer {
+  background-color: #8ed2c9;
+  padding: 2rem 2rem 4rem;
+  color: #fcf4d9;
 }

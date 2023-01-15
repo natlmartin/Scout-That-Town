@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lobster&family=Raleway:wght@300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Raleway:wght@300;800&display=swap"
       rel="stylesheet"
     />
     <link rel="icon" type="image/x-icon" href="./resources/Town Icon.png" />
@@ -25,7 +25,7 @@
     />
   </head>
   <body>
-    <!-- Create nav bar-->
+    <!-- Nav bar-->
     <nav class="navbar">
       <div class="logo">
         <img
@@ -38,89 +38,118 @@
       <ul class="links">
         <div class="navmenu">
           <li>
-            <a href="#">City Picker</a>
+            <a href="#Surprise">City Picker</a>
           </li>
           <li>
             <a href="#">About Us</a>
           </li>
           <li>
-            <a href="#">Contact Us</a>
+            <a href="#contact">Contact Us</a>
           </li>
         </div>
       </ul>
       <img class="burger" src="./resources/menu.png" />
     </nav>
-    <!-- Create banner-->
+    <!-- Hero banner -->
     <header>
       <div class="hero">
-        <h1>Scout That Town</h1>
-        <h2>Where will you find your next adventure?</h2>
-        <p>Enter a city in the search bar or select a city below</p>
-        <!-- Add search bar -->
+        <div class="heroContent">
+          <h1>Scout That Town</h1>
+          <h2 class="heroContent">Where will you find your next adventure?</h2>
+          <p>Search a city or select one below</p>
+          <div class="container-fluid">
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Choose your adventure"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Let's travel
+              </button>
+            </form>
+          </div>
+        </div>
       </div>
     </header>
 
-    <!-- Add paragraph -->
-    <!-- Add cities -->
-    <section id="CitySelection">
-      <p>Choose from a city below to get started.</p>
-      <div class="cardSection">
-        <div class="card" style="width: 18rem">
-          <img
-            src="./resources/eiffel-tower-in-paris-151-medium.jpeg"
-            class="card-img-top"
-            alt="Paris"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Paris</h5>
-            <p class="card-text">
-              The city of love! Sip wine on the Seine and explore the narrowed
-              cobbled streets of the world's most romantic city.
-            </p>
-            <a href="#" class="btn btn-primary cityButton">Scout Paris</a>
+    <!-- City Selection -->
+    <main>
+      <section id="CitySelection">
+        <h2>Choose your next desination</h2>
+        <p>
+          Satisfy your wunderlust and choose from a city below to find out more
+          about that location. Happy travelling!
+        </p>
+        <div class="cardSection">
+          <div class="card" style="width: 18rem">
+            <img
+              src="./resources/eiffel-tower-in-paris-151-medium.jpeg"
+              class="card-img-top"
+              alt="Paris"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Paris</h5>
+              <p class="card-text">
+                The city of love! Sip wine on the Seine and explore the narrowed
+                streets of this romantic city.
+              </p>
+              <a href="#" class="btn btn-primary cityButton">Scout Paris</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img
+              src="./resources/london.jpeg"
+              class="card-img-top"
+              alt="London"
+            />
+            <div class="card-body">
+              <h5 class="card-title">London</h5>
+              <p class="card-text">
+                Hop on the tube and explore the hidden history of England's
+                capital city.
+              </p>
+              <a href="#" class="btn btn-primary cityButton">Scout London</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img
+              src="./resources/madrid.jpeg"
+              class="card-img-top"
+              alt="Madrid"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Madrid</h5>
+              <p class="card-text">
+                Explore the expansive boulvards and immerse yourself in the art
+                of Spain's capital.
+              </p>
+              <a href="#" class="btn btn-primary cityButton">Scout Madrid</a>
+            </div>
           </div>
         </div>
-        <div class="card" style="width: 18rem">
-          <img
-            src="./resources/london.jpeg"
-            class="card-img-top"
-            alt="London"
-          />
-          <div class="card-body">
-            <h5 class="card-title">London</h5>
-            <p class="card-text">
-              Hop on the tube and explore the hidden history of England's
-              capital city.
-            </p>
-            <a href="#" class="btn btn-primary cityButton">Scout London</a>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img
-            src="./resources/madrid.jpeg"
-            class="card-img-top"
-            alt="Madrid"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Madrid</h5>
-            <p class="card-text">
-              Explore the expansive boulvards and immerse yourself in the art of
-              Spain's capital.
-            </p>
-            <a href="#" class="btn btn-primary cityButton">Scout Madrid</a>
-          </div>
-        </div>
+      </section>
+
+      <!-- Surprise me section -->
+      <section id="Surprise"></section>
+      <div class="surpriseMe">
+        <h2>Surprise me!</h2>
+        <p>
+          No idea where you want to travel next? Click the button below and
+          we'll choose for you! 🎉
+        </p>
+        <button class="btn btn-outline-success" type="submit">
+          Surprise me!
+        </button>
       </div>
-    </section>
-    <!-- Surprise me section -->
-    <!-- Add prompt and surprise me pop up -->
-    <section id="SurpriseMe"></section>
-    <h2>Surprise me!</h2>
-    <!-- Create footer -->
-    <footer>
-      <h6>Get in touch</h6>
-      <p>Email: info@scoutthattown.com</p>
-      <p>Phone: 0000 000 000</p>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact">
+      <h6>Get in touch 👋🏻</h6>
+      <p><strong>📧 Email:</strong> info@scoutthattown.com</p>
+      <p><strong>📞 Phone:</strong> 0000 000 000</p>
     </footer>
     <script src="./resources/index.js"></script>
     <script
