@@ -1,8 +1,18 @@
+// Return random city
+
 function randomCity() {
-  alert("Let's go to London!");
+  alert(`Let's go to ${chooseTown}!`);
 }
 
-let element = document.querySelector("#surprisebtn");
-element.addEventListener("click", randomCity());
+var randomTowns = ["London", "Madrid", "Paris"];
+var chooseTown = randomTowns[Math.floor(Math.random() * randomTowns.length)];
 
-let name = document.getElementById("Name");
+// Return user name & city choice
+
+function addP() {
+  var nameValue = document.getElementById("userName").value;
+  var cityValue = document.getElementById("userCity").value;
+
+  let newMessage = document.getElementById("userMessage");
+  newMessage.innerHTML += `Thanks for joining ${nameValue}, we look forward to exploring ${cityValue} with you!`;
+}

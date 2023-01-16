@@ -108,6 +108,9 @@ a:hover {
   padding: 10px 5px;
 }
 
+@media only screen and (max-width: 745px) {
+}
+
 @media only screen and (max-width: 480px) {
   nav li a {
     display: none;
@@ -119,7 +122,7 @@ a:hover {
     margin-right: 1rem;
   }
 
-  h1 {
+  h1.logo {
     display: none;
   }
 
@@ -149,9 +152,15 @@ h2.heroContent {
   color: #d55b3e;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 745px) {
   div.heroContent {
     width: 80%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  h2.heroContent {
+    display: none;
   }
 }
 
@@ -162,6 +171,10 @@ h2.heroContent {
 }
 
 .btn:hover {
+  background-color: #8ed2c9;
+}
+
+:not(.btn-check) + .btn:active {
   background-color: #8ed2c9;
 }
 
@@ -189,7 +202,11 @@ h2.heroContent {
 }
 
 .infoForm {
-  width: 30%;
+  width: 60%;
+}
+
+.whatcity {
+  margin-top: 1.5rem;
 }
 
 label {

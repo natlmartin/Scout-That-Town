@@ -141,7 +141,7 @@
           </p>
           <button
             class="btn btn-outline-success surprisebtn"
-            type="submit"
+            type="button"
             onclick="randomCity()"
           >
             Surprise me!
@@ -152,8 +152,8 @@
       <!-- More Info -->
       <section id="moreInfo">
         <div class="Information">
-          <h2>Want more information?</h2>
-          <p>
+          <h2>Where will you go next?</h2>
+          <p id="userMessage">
             Enter your details below to join thousands of travellers already
             using Scout That Town to find their next destination!
           </p>
@@ -165,7 +165,7 @@
                 type="text"
                 placeholder="Enter your name"
                 aria-label="Name"
-                id="Name"
+                id="userName"
               />
               <label for="Email">Email address: </label>
               <input
@@ -175,6 +175,21 @@
                 aria-lable="Email"
                 id="Email"
               />
+              <label for="City">What city do you want to visit? </label>
+              <input
+                class="form-control me-2"
+                type="text"
+                placeholder="Where do you want to go?"
+                aria-lable="City"
+                id="userCity"
+              />
+              <button
+                class="btn btn-outline-success whatcity"
+                type="button"
+                onclick="addP()"
+              >
+                Let's go
+              </button>
             </form>
           </div>
         </div>
