@@ -184,6 +184,19 @@ h2.heroContent {
   margin: 2rem;
 }
 
+.Information {
+  margin: 2rem;
+}
+
+.infoForm {
+  width: 30%;
+}
+
+label {
+  font-weight: 800;
+  padding: 0.5rem 0 0.5rem;
+}
+
 footer {
   background-color: #8ed2c9;
   padding: 2rem 2rem 4rem;

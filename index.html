@@ -132,17 +132,53 @@
       </section>
 
       <!-- Surprise me section -->
-      <section id="Surprise"></section>
-      <div class="surpriseMe">
-        <h2>Surprise me!</h2>
-        <p>
-          No idea where you want to travel next? Click the button below and
-          we'll choose for you! 🎉
-        </p>
-        <button class="btn btn-outline-success" type="submit">
-          Surprise me!
-        </button>
-      </div>
+      <section id="Surprise">
+        <div class="surpriseMe">
+          <h2>Surprise me!</h2>
+          <p>
+            No idea where you want to travel next? Click the button below and
+            we'll choose for you! 🎉
+          </p>
+          <button
+            class="btn btn-outline-success surprisebtn"
+            type="submit"
+            onclick="randomCity()"
+          >
+            Surprise me!
+          </button>
+        </div>
+      </section>
+
+      <!-- More Info -->
+      <section id="moreInfo">
+        <div class="Information">
+          <h2>Want more information?</h2>
+          <p>
+            Enter your details below to join thousands of travellers already
+            using Scout That Town to find their next destination!
+          </p>
+          <div class="infoForm">
+            <form>
+              <label for="Name">Name: </label>
+              <input
+                class="form-control me-2"
+                type="text"
+                placeholder="Enter your name"
+                aria-label="Name"
+                id="Name"
+              />
+              <label for="Email">Email address: </label>
+              <input
+                class="form-control me-2"
+                type="email"
+                placeholder="Email address"
+                aria-lable="Email"
+                id="Email"
+              />
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
