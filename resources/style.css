@@ -152,6 +152,14 @@ main {
   background-image: url("parisimages/paris-background.jpeg");
 }
 
+.hero.madrid {
+  background-image: url("madridimages/madrid-background-3.jpg");
+}
+
+.hero.berlin {
+  background-image: url("berlinimages/berlin-background.jpg");
+}
+
 div.heroContent {
   padding: 2rem;
   width: 50%;
