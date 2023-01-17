@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+        crossorigin="anonymous"
+      />
+      <link href="./resources/style.css" rel="stylesheet" type="text/CSS" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Lobster&family=Raleway:wght@300;800&display=swap"
+        rel="stylesheet"
+      />
+      <link rel="icon" type="image/x-icon" href="./resources/Town Icon.png" />
+      <title>Scout That Town - Find Your Next Adventure in London</title>
+      <meta
+        name="description"
+        content="Find your next London adventure with Scout That Town. Information about holiday destinations."
+      />
+    </head>
+    <body>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="index.html"><img
+            src="./resources/Town Icon.png"
+            alt="Scout That Town"
+            class="logo"
+          /></a>
+          <h1 class="logo">Scout That Town</h1>
+        </div>
+        <ul class="links">
+          <div class="navmenu">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="#">London</a>
+            </li>
+            <li>
+              <a href="paris.html">Paris</a>
+            </li>
+          </div>
+        </ul>
+        <img class="burger" src="./resources/menu.png" />
+      </nav>
+      <!-- Hero banner -->
+      <header>
+        <div class="hero london">
+          <div class="heroContent">
+            <h1>London</h1>
+            <h2 class="heroContent">England, UK</h2>
+          </div>
+        </div>
+      </header>
+      <main>
+        <!-- Intro -->
+        <div class="townIntro">
+          <p>
+            London is the capital and largest city of England and the United
+            Kingdom, with a population of just under 9 million. It stands on the
+            River Thames in south-east England at the head of a 50-mile (80 km)
+            estuary down to the North Sea, and has been a major settlement for
+            two millennia. The City of London, its ancient core and financial
+            centre, was founded by the Romans as Londinium and retains its
+            medieval boundaries. The City of Westminster, to the west of the
+            City of London, has for centuries hosted the national government and
+            parliament. Since the 19th century, the name "London" has also
+            referred to the metropolis around this core, historically split
+            between the counties of Middlesex, Essex, Surrey, Kent, and
+            Hertfordshire, which largely comprises Greater London, governed by
+            the Greater London Authority.
+          </p>
+          <br />
+          <p>
+            As one of the world's major global cities, London exerts a strong
+            influence on its arts, entertainment, fashion, commerce and finance,
+            education, health care, media, science and technology, tourism, and
+            transport and communications.
+          </p>
+        </div>
+
+        <figure>
+          <img class="townImage" src="./resources/Londonimages/london1.jpg" alt="London" />
+          <figcaption>Top sights in London</figcaption>
+        </figure>
+
+        <!-- Links -->
+        <div class="attractions">
+        <h2>Top London Attractions 🎡</h2>
+        <a class = "attractionLink" href="https://www.hrp.org.uk/tower-of-london/#gs.mtpqqw"
+          >Tower of London</a
+        >
+        <a class = "attractionLink" href="https://www.londoneye.com/">London Eye</a>
+        <a class = "attractionLink" href="https://www.rct.uk/visit/buckingham-palace/"
+          >Buckingham Palace</a
+        >
+          </div>
+        <!-- Weather -->
+          <div class="weather">
+        <a
+          class="weatherwidget-io"
+          href="https://forecast7.com/en/51d51n0d13/london/"
+          data-label_1="LONDON"
+          data-label_2="WEATHER"
+          data-theme="original"
+          >LONDON WEATHER</a
+        >
+        </div>
+
+        <!-- Flights -->
+
+          <h2 class = "flightsHeading">Plan your trip to London ✈️</h2>
+  <div class="flights">
+            <div data-skyscanner-widget="SearchWidget"></div>
+            </div>
+          </div>
+   
+<!-- Go back -->
+<div class="back">
+          <form>
+            <input
+              class="btn btn-outline-success goback"
+              type="button"
+              value="Pick another city!"
+              onclick="history.back()"
+            />
+          </form>
+      </main>
+      </div>
+
+      <!-- Footer -->
+      <footer id="contact">
+        <h6>Get in touch 👋🏻</h6>
+        <p><strong>📧 Email:</strong> info@scoutthattown.com</p>
+        <p><strong>📞 Phone:</strong> 0000 000 000</p>
+      </footer>
+
+      <!-- Scripts -->
+      <script
+        src="https://widgets.skyscanner.net/widget-server/js/loader.js"
+        async
+      ></script>
+      <script src="./resources/index.js"></script>
+      <script>
+        !(function (d, s, id) {
+          var js,
+            fjs = d.getElementsByTagName(s)[0];
+          if (!d.getElementById(id)) {
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://weatherwidget.io/js/widget.min.js";
+            fjs.parentNode.insertBefore(js, fjs);
+          }
+        })(document, "script", "weatherwidget-io-js");
+      </script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"
+      ></script>
+    </body>
+  </html>
+</html>

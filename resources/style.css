@@ -120,6 +120,7 @@ a:hover {
     display: block;
     float: right;
     margin-right: 1rem;
+    height: 50px;
   }
 
   h1.logo {
@@ -141,6 +142,14 @@ main {
   width: 100%;
   height: 20rem;
   margin: 3rem 0 2rem;
+}
+
+.hero.london {
+  background-image: url("Londonimages/london-background.jpeg");
+}
+
+.hero.paris {
+  background-image: url("parisimages/paris-background.jpeg");
 }
 
 div.heroContent {
@@ -207,6 +216,57 @@ h2.heroContent {
 
 .whatcity {
   margin-top: 1.5rem;
+}
+
+.townIntro {
+  margin: 2rem;
+}
+
+figcaption {
+  text-align: center;
+  font-style: italic;
+}
+
+.townImage {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.attractionLink {
+  display: block;
+  text-decoration: none;
+  color: #d55b3e;
+  font-weight: 600;
+}
+
+.attractions {
+  margin: 2rem;
+}
+
+.attractionLink:hover {
+  color: #8ed2c9;
+}
+
+.weather {
+  width: 60%;
+  margin: 0 auto;
+  display: block;
+}
+
+.flights {
+  display: block;
+  margin: 0 auto;
+  width: 60%;
+}
+
+.flightsHeading {
+  margin: 2rem;
+}
+
+.goback {
+  display: block;
+  margin: 2rem auto;
 }
 
 label {

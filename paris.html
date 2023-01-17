@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link href="./resources/style.css" rel="stylesheet" type="text/CSS" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Raleway:wght@300;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="./resources/Town Icon.png" />
+    <title>Scout That Town - Find Your Next Adventure in Paris</title>
+    <meta
+      name="description"
+      content="Find your next Parisian adventure with Scout That Town. Information about holiday destinations."
+    />
+  </head>
+<body>
+<nav class="navbar">
+      <div class="logo">
+        <a href="index.html"><img
+          src="./resources/Town Icon.png"
+          alt="Scout That Town"
+          class="logo"
+        />
+        <h1 class="logo">Scout That Town</h1>
+      </div>
+      <ul class="links">
+        <div class="navmenu">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="london.html">London</a>
+          </li>
+          <li>
+            <a href="#">Paris</a>
+          </li>
+        </div>
+      </ul>
+      <img class="burger" src="./resources/menu.png" />
+    </nav>
+    <!-- Hero banner -->
+    <header>
+      <div class="hero paris">
+        <div class="heroContent">
+          <h1>Paris</h1>
+          <h2 class="heroContent">France, Europe</h2>
+        </div>
+      </div>
+    </header>
+    <main>
+
+      <!-- Intro -->
+      <div class="townIntro">
+<p>Paris is the capital and most populous city of France, with an estimated population of 2,165,423 residents in 2019 in an area of more than 105 km² (41 sq mi),making it the 30th most densely populated city in the world in 2020.Since the 17th century, Paris has been one of the world's major centres of finance, diplomacy, commerce, fashion, gastronomy, and science. For its leading role in the arts and sciences, as well as its very early system of street lighting, in the 19th century it became known as "the City of Light".Like London, prior to the Second World War, it was also sometimes called the capital of the world.
+</p>    
+</div>
+
+<figure>
+    <img class="townImage" src="./resources/parisimages/paris1.jpg" alt="Paris">
+    <figcaption>Top sights in Paris</figcaption>
+</figure>
+
+<!-- Links -->
+<div class="attractions">
+<h2>Top Attractions in Paris 🎡</h2>
+        <a class="attractionLink" href="https://www.toureiffel.paris/en">Eiffel Tower</a>
+        <a class="attractionLink"
+         href="https://www.louvre.fr/en">Louvre Museum</a>
+        <a class="attractionLink" href="https://www.paris-arc-de-triomphe.fr/en/">Arc de Triomphe</a>
+</div>
+        <!-- Weather -->
+<div class="weather"><a class="weatherwidget-io" href="https://forecast7.com/en/48d862d35/paris/" data-label_1="PARIS" data-label_2="WEATHER" data-theme="original" >PARIS WEATHER</a>
+</div>
+<!-- Flights -->
+
+<h2 class="flightsHeading">Plan your trip to Paris ✈️</h2>
+<div class="flights"><div data-skyscanner-widget="SearchWidget"></div>
+</div>
+
+<!-- Back to homepage -->
+<div class="back">   
+<form>
+        <input class="btn btn-outline-success goback" type="button" value="Pick another city!" onclick="history.back()">
+       </form>
+       </div> 
+</main>
+
+<!-- Footer -->
+    <footer id="contact">
+      <h6>Get in touch 👋🏻</h6>
+      <p><strong>📧 Email:</strong> info@scoutthattown.com</p>
+      <p><strong>📞 Phone:</strong> 0000 000 000</p>
+    </footer>
+
+    <!-- Scripts -->
+            <script>
+        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+        </script>
+        <script src="https://widgets.skyscanner.net/widget-server/js/loader.js" async></script>
+    <script src="./resources/index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+</body>
+
+</html>
