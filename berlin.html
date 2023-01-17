@@ -19,7 +19,9 @@
       href="https://fonts.googleapis.com/css2?family=Lobster&family=Raleway:wght@300;800&display=swap"
       rel="stylesheet"
     />
-    <!-- <link rel="icon" type="image/x-icon" href="./resources/Town Icon.png" /> -->
+    <link rel="icon" type="image/x-icon" href="./resources/Town Icon.png" />
+    <script src="resources/chosencity.js" defer></script>
+    <script src="resources/index.js" defer></script>
     <title>Scout That Town - Find Your Next Adventure in Berlin</title>
   </head>
   <body>
@@ -98,6 +100,27 @@
           <!-- end of links -->
 
 
+
+          <!-- Weather -->
+          <div class="weather">
+        <a
+          class="weatherwidget-io"
+          href="https://forecast7.com/en/51d51n0d13/berlin/"
+          data-label_1="BERLIN"
+          data-label_2="WEATHER"
+          data-theme="original"
+          >BERLIN WEATHER</a
+        >
+        </div>
+
+        <!-- Flights -->
+
+          <h2 class = "flightsHeading">Plan your trip to Berlin ✈️</h2>
+  <div class="flights">
+            <div data-skyscanner-widget="SearchWidget"></div>
+            </div>
+          </div>
+        </br>
 <div class="back">
           <form>
             <input
@@ -107,8 +130,22 @@
               onclick="history.back()"
             />
           </form>
+          <!-- More information -->
+        </br>
+      <div class = "more-info">
+    <h3>Want to know even more about Berlin?</h3>
+      <button type="btn btn-outline-success "  class="givemoreinfo" >Give me more info!</button>
+      </div>
       </main>
       </div>
+      </br>
+           <!-- Liked -->
+      <section>
+        <div class="Information Liked">
+          <h4>Enjoyed our website? Give us a like!</h4>
+          <button id="likeButton" class="btn">Like</button>
+        </div>
+      </section>
 
 <!-- end of go back -->
     <!-- footer -->
@@ -120,6 +157,28 @@
 
     <!-- end of footer -->
     <!-- SCRIPTS  -->
-    <script></script>
+
+  <script
+        src="https://widgets.skyscanner.net/widget-server/js/loader.js"
+        async
+      ></script>
+      
+      <script>
+        !(function (d, s, id) {
+          var js,
+            fjs = d.getElementsByTagName(s)[0];
+          if (!d.getElementById(id)) {
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://weatherwidget.io/js/widget.min.js";
+            fjs.parentNode.insertBefore(js, fjs);
+          }
+        })(document, "script", "weatherwidget-io-js");
+      </script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"
+      ></script>
   </body>
 </html>

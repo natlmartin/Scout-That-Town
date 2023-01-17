@@ -16,3 +16,11 @@ function addP() {
   let newMessage = document.getElementById("userMessage");
   newMessage.innerHTML += `Thanks for joining ${nameValue}, we look forward to exploring ${cityValue} with you!`;
 }
+
+// Like our page
+const likeButton = document.getElementById("likeButton");
+
+likeButton.addEventListener("click", function () {
+  likeButton.textContent = "Liked!";
+  likeButton.style.backgroundColor = "#8ed2c9";
+});
